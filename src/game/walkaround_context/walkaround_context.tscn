@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://t5asxvekvjtf"]
+
+[ext_resource type="Script" uid="uid://iacsx5d73pt3" path="res://src/game/walkaround_context/WalkaroundContext.cs" id="1_xs4b1"]
+
+[node name="walkaroundContext" type="Node2D" unique_id=1383023132]
+script = ExtResource("1_xs4b1")

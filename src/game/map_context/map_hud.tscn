@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://spda10feyawd"]
+
+[ext_resource type="Script" uid="uid://llc711bjn84c" path="res://src/game/map_context/MapHud.cs" id="1_7nacq"]
+
+[node name="mapHud" type="CanvasLayer" unique_id=1322283231]
+script = ExtResource("1_7nacq")

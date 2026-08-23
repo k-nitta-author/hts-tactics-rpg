@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://jhe8ln2l1can"]
+
+[ext_resource type="Script" uid="uid://cxgnvni27365g" path="res://src/game/Game.cs" id="1_qnjlk"]
+
+[node name="Game" type="Node2D" unique_id=539377796]
+script = ExtResource("1_qnjlk")
+metadata/_edit_lock_ = true
