@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bmp82tk2278w0"]
+
+[ext_resource type="Script" uid="uid://bnybk63u03aa1" path="res://src/game/walkaround_context/WalkaroundPlayer.cs" id="1_1pi7i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uqb0r"]
+
+[node name="WalkaroundPlayer" type="CharacterBody2D" unique_id=421151936]
+motion_mode = 1
+script = ExtResource("1_1pi7i")
+speed = 30.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1714611118]
+shape = SubResource("RectangleShape2D_uqb0r")
+
+[node name="sprite" type="Sprite2D" parent="." unique_id=523484990]

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bj7jqm76atcqg"]
+
+[ext_resource type="Texture2D" uid="uid://btctnhiyyy4fr" path="res://asset/icon.svg" id="1_gkwm4"]
+[ext_resource type="Script" uid="uid://dap3skukdhrue" path="res://src/game/map_context/Cursor.cs" id="2_jxvu7"]
+
+[node name="cursor" type="Sprite2D" unique_id=1785540577]
+scale = Vector2(0.10156251, 0.09375003)
+texture = ExtResource("1_gkwm4")
+script = ExtResource("2_jxvu7")

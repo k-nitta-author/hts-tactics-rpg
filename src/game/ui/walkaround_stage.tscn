@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cfpmdy2e7at4s"]
+
+[ext_resource type="Script" uid="uid://cx431sn346ci0" path="res://src/game/ui/WalkaroundStage.cs" id="1_8yfgd"]
+[ext_resource type="PackedScene" uid="uid://bmp82tk2278w0" path="res://src/game/walkaround_context/walkaround_player.tscn" id="2_gmg0s"]
+
+[node name="WalkaroundStage" type="Node2D" unique_id=1461934234]
+script = ExtResource("1_8yfgd")
+
+[node name="tilemapLayer" type="TileMapLayer" parent="." unique_id=472684235]
+
+[node name="WalkaroundPlayer" parent="." unique_id=421151936 instance=ExtResource("2_gmg0s")]

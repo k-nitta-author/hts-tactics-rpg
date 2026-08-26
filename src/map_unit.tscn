@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://xvqt462vk3av"]
+
+[ext_resource type="Script" uid="uid://4ily2js0g8k1" path="res://src/MapUnit.cs" id="1_1vsuc"]
+[ext_resource type="Texture2D" uid="uid://btctnhiyyy4fr" path="res://asset/icon.svg" id="1_ccfc6"]
+
+[node name="MapUnit" type="Node2D" unique_id=1376736773]
+script = ExtResource("1_1vsuc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1549658550]
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("1_ccfc6")

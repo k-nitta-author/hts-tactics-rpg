@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bpx7vaops555f"]
+
+[ext_resource type="Texture2D" uid="uid://btctnhiyyy4fr" path="res://asset/icon.svg" id="1_g7uwf"]
+[ext_resource type="Script" uid="uid://fuvyr286xx70" path="res://src/game/map_context/UnitPanelComponent.cs" id="1_sow8c"]
+
+[node name="UnitPanelComponent" type="Control" unique_id=1272530968]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 64.0
+grow_horizontal = 2
+script = ExtResource("1_sow8c")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1094438170]
+layout_mode = 0
+offset_right = 16.0
+offset_bottom = 16.0
+texture = ExtResource("1_g7uwf")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=2013701527]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 64.0
+offset_bottom = 23.0

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://t1gdpngdppa0"]
+
+[ext_resource type="Script" uid="uid://dsoc5fr1fkecg" path="res://src/game/ui/DialogBox.cs" id="1_ovaiy"]
+
+[node name="DialogBox" type="Panel" unique_id=331774410]
+offset_left = 2.0
+offset_top = 166.0
+offset_right = 321.0
+offset_bottom = 235.0
+script = ExtResource("1_ovaiy")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=311145103]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

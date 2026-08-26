@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b66ttigyfohs0"]
+
+[ext_resource type="Script" uid="uid://cd2hu3p5pegn3" path="res://src/game/map_context/OptionsPanel.cs" id="1_orxan"]
+
+[node name="OptionsPanel" type="Panel" unique_id=1792724228]
+visible = false
+offset_left = 208.0
+offset_top = 16.0
+offset_right = 312.0
+offset_bottom = 216.0
+script = ExtResource("1_orxan")

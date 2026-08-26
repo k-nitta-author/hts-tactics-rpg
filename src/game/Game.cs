@@ -5,17 +5,20 @@ public partial class Game : Node2D
 {
     public static int GRID_SIZE => 16;
 
-    [Export] Vector2I mapSize {get {return _mapSize;} set {_mapSize = value;}}
+    public static string[] class_names = {"null", "exorcist", "PALADIN", "citizen"};  
+
+    [Export] Vector2I mapSize { get { return _mapSize; } set { _mapSize = value; } }
     private Vector2I _mapSize;
 
     private StartScreen startScreen;
 
     [Export] bool skipStartScreen;
 
+    IContext currentContext;
 
     public override void _Ready()
     {
-        if (skipStartScreen){return;}
+        if (skipStartScreen) { return; }
 
         startScreen = GD.Load<PackedScene>("uid://dobs7g5vxgsbu").Instantiate<StartScreen>();
         AddChild(startScreen);
@@ -30,12 +33,12 @@ public partial class Game : Node2D
 
     public void LoadGame()
     {
-        
+
     }
 
     public void ShowSettings()
     {
-        
+
     }
 
     public void EndGame()

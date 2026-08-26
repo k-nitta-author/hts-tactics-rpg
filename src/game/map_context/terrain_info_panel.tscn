@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://btpbb2wwgi5hl"]
+
+[ext_resource type="Script" uid="uid://kqjqpmbmua21" path="res://src/game/map_context/TerrainInfoPanel.cs" id="1_bnidg"]
+
+[node name="TerrainInfoPanel" type="Panel" unique_id=878632882]
+offset_left = 8.0
+offset_top = 144.0
+offset_right = 88.0
+offset_bottom = 232.0
+script = ExtResource("1_bnidg")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="." unique_id=455326134]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 71.0
+offset_bottom = 31.0
+
+[node name="Label2" type="Label" parent="." unique_id=465552236]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 71.0
+offset_bottom = 55.0
+
+[node name="Label3" type="Label" parent="." unique_id=458947221]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 56.0
+offset_right = 71.0
+offset_bottom = 79.0
