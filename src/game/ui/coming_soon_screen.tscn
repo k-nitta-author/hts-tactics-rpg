@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://brvokgn4s7w2t"]
 
-[ext_resource type="Script" uid="uid://cv3tumq64msho" path="res://src/game/ComingSoonScreen.cs" id="1_dr3sy"]
+[ext_resource type="Script" uid="uid://cv3tumq64msho" path="res://src/game/ui/ComingSoonScreen.cs" id="1_dr3sy"]
 
 [node name="ComingSoonScreen" type="Control" unique_id=366366325]
 layout_mode = 3
