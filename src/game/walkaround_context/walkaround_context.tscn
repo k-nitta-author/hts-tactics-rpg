@@ -1,6 +1,13 @@
 [gd_scene format=3 uid="uid://t5asxvekvjtf"]
 
 [ext_resource type="Script" uid="uid://iacsx5d73pt3" path="res://src/game/walkaround_context/WalkaroundContext.cs" id="1_xs4b1"]
+[ext_resource type="PackedScene" uid="uid://cfpmdy2e7at4s" path="res://src/game/ui/walkaround_stage.tscn" id="2_7qdkx"]
+[ext_resource type="PackedScene" uid="uid://bapde8aht1hnv" path="res://src/game/walkaround_context/walkaround_hud.tscn" id="3_x67u6"]
 
 [node name="walkaroundContext" type="Node2D" unique_id=1383023132]
 script = ExtResource("1_xs4b1")
+
+[node name="WalkaroundStage" parent="." unique_id=1461934234 instance=ExtResource("2_7qdkx")]
+position = Vector2(157, 28)
+
+[node name="walkaroundHud" parent="." unique_id=1340606653 instance=ExtResource("3_x67u6")]

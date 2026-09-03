@@ -1,11 +1,9 @@
-using System.Reflection.Metadata;
 using Godot;
+using Godot.Collections;
 
 public partial class Game : Node2D
 {
     public static int GRID_SIZE => 16;
-
-    public static string[] class_names = {"null", "exorcist", "PALADIN", "citizen"};  
 
     [Export] Vector2I mapSize { get { return _mapSize; } set { _mapSize = value; } }
     private Vector2I _mapSize;
@@ -22,7 +20,7 @@ public partial class Game : Node2D
 
         startScreen = GD.Load<PackedScene>("uid://dobs7g5vxgsbu").Instantiate<StartScreen>();
         AddChild(startScreen);
-        startScreen.CallDeferred("Setup", this);
+        startScreen.CallDeferred("Setup", this);   
     }
 
 

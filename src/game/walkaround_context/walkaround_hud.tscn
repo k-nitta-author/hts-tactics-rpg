@@ -1,3 +1,10 @@
 [gd_scene format=3 uid="uid://bapde8aht1hnv"]
 
+[ext_resource type="Script" uid="uid://ced6ovumwynln" path="res://src/game/walkaround_context/WalkaroundHud.cs" id="1_1ibsd"]
+
 [node name="walkaroundHud" type="CanvasLayer" unique_id=1340606653]
+script = ExtResource("1_1ibsd")
+
+[node name="Label" type="Label" parent="." unique_id=393156885]
+offset_right = 40.0
+offset_bottom = 23.0

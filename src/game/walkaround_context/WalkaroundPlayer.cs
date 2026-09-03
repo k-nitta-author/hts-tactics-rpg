@@ -1,5 +1,4 @@
 using Godot;
-using System;
 
 public partial class WalkaroundPlayer : CharacterBody2D
 {
@@ -8,18 +7,28 @@ public partial class WalkaroundPlayer : CharacterBody2D
 
 	[Export] float speed;
 
-	public void walkSpeed(){}
-
     public override void _PhysicsProcess(double delta)
     {
-        base._PhysicsProcess(delta);
-
-		float x = Input.GetAxis("walkaroundLeft","walkaroundRight");
-		float y = Input.GetAxis("walkaroundUp","walkaroundDown");
-
-		Velocity = new Vector2(x, y) * speed;
+		Walk();
 
 		MoveAndSlide();
     }
+
+	public void TestForInteraction()
+	{
+		if (Input.IsActionPressed("walkaroundInteract"))
+		{
+				
+		}
+		
+	}
+
+	public void Walk()
+	{
+		float x = Input.GetAxis("walkaroundLeft","walkaroundRight");
+		float y = Input.GetAxis("walkaroundUp","walkaroundDown");
+
+		Velocity = new Vector2(x, y) * speed;		
+	}
 
 }

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cx431sn346ci0" path="res://src/game/ui/WalkaroundStage.cs" id="1_8yfgd"]
 [ext_resource type="PackedScene" uid="uid://bmp82tk2278w0" path="res://src/game/walkaround_context/walkaround_player.tscn" id="2_gmg0s"]
+[ext_resource type="PackedScene" uid="uid://58mc0ltwnxuf" path="res://src/game/ui/walkaround_npc.tscn" id="3_lbafk"]
 
 [node name="WalkaroundStage" type="Node2D" unique_id=1461934234]
 script = ExtResource("1_8yfgd")
@@ -9,3 +10,12 @@ script = ExtResource("1_8yfgd")
 [node name="tilemapLayer" type="TileMapLayer" parent="." unique_id=472684235]
 
 [node name="WalkaroundPlayer" parent="." unique_id=421151936 instance=ExtResource("2_gmg0s")]
+
+[node name="WalkaroundNPC" parent="." unique_id=453930418 instance=ExtResource("3_lbafk")]
+position = Vector2(118, 38)
+
+[node name="WalkaroundNPC2" parent="." unique_id=1823127309 instance=ExtResource("3_lbafk")]
+position = Vector2(231, 97)
+
+[node name="WalkaroundNPC3" parent="." unique_id=862776723 instance=ExtResource("3_lbafk")]
+position = Vector2(121, 138)

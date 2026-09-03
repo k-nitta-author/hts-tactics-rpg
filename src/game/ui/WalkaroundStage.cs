@@ -1,9 +1,10 @@
 using Godot;
 
-public partial class WalkaroundStage : Node2D
+public partial class WalkaroundStage : Node2D, IStage
 {
     
     TileMapLayer tilemapLayer;
+    WalkaroundPlayer walkaroundPlayer;
 
     public override void _Ready()
     {

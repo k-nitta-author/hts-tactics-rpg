@@ -2,9 +2,13 @@
 
 [ext_resource type="Script" uid="uid://eu4w65tdkge" path="res://src/game/ui/WalkaroundNpc.cs" id="1_pqt8x"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7qdkx"]
+size = Vector2(16, 16)
+
 [node name="WalkaroundNPC" type="CharacterBody2D" unique_id=453930418]
 script = ExtResource("1_pqt8x")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1266150718]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2089120376]
+shape = SubResource("RectangleShape2D_7qdkx")
