@@ -1,0 +1,24 @@
+{
+    "characters": [
+        {
+            "name": "Mara",
+            "class": 3
+        },
+        {
+            "name": "Sara",
+            "class": 2
+        },
+        {
+            "name": "Bartholomew",
+            "class": 1
+        },
+        {
+            "name": "Enzo",
+            "class": 5
+        },
+        {
+            "name": "Harvey",
+            "class": 5
+        }
+    ]
+}
