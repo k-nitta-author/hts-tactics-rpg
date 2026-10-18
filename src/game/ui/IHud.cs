@@ -1,5 +1,5 @@
 public interface IHud
 {
-    public void OnEnterStage(){}
-    public void OnExitStage(){}
+    public void OnEnterStage() { }
+    public void OnExitStage() { }
 }

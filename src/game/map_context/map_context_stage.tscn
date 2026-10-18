@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d2dirut72kkoc"]
+
+[ext_resource type="Script" uid="uid://cx8hbvtqr1yuf" path="res://src/game/map_context/MapContextStage.cs" id="1_tgljp"]
+
+[node name="MapContextStage" type="Node2D" unique_id=698027743]
+script = ExtResource("1_tgljp")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1099478610]

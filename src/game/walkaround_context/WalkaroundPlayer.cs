@@ -2,33 +2,33 @@ using Godot;
 
 public partial class WalkaroundPlayer : CharacterBody2D
 {
-	CollisionObject2D collisionObject2D;
-	Sprite2D sprite;
+    CollisionObject2D collisionObject2D;
+    Sprite2D sprite;
 
-	[Export] float speed;
+    [Export] float speed;
 
     public override void _PhysicsProcess(double delta)
     {
-		Walk();
+        Walk();
 
-		MoveAndSlide();
+        MoveAndSlide();
     }
 
-	public void TestForInteraction()
-	{
-		if (Input.IsActionPressed("walkaroundInteract"))
-		{
-				
-		}
-		
-	}
+    public void TestForInteraction()
+    {
+        if (Input.IsActionPressed("walkaroundInteract"))
+        {
 
-	public void Walk()
-	{
-		float x = Input.GetAxis("walkaroundLeft","walkaroundRight");
-		float y = Input.GetAxis("walkaroundUp","walkaroundDown");
+        }
 
-		Velocity = new Vector2(x, y) * speed;		
-	}
+    }
+
+    public void Walk()
+    {
+        float x = Input.GetAxis("walkaroundLeft", "walkaroundRight");
+        float y = Input.GetAxis("walkaroundUp", "walkaroundDown");
+
+        Velocity = new Vector2(x, y) * speed;
+    }
 
 }

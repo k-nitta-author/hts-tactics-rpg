@@ -2,7 +2,7 @@ using Godot;
 
 public partial class WalkaroundStage : Node2D, IStage
 {
-    
+
     TileMapLayer tilemapLayer;
     WalkaroundPlayer walkaroundPlayer;
 

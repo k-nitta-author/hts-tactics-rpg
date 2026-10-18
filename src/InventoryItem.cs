@@ -3,7 +3,8 @@ using Godot.Collections;
 
 public struct InventoryItem
 {
-    public enum TYPE: byte {
+    public enum TYPE : byte
+    {
         HEALING,
         INFO,
         UNIQUE
@@ -23,19 +24,19 @@ public struct InventoryItem
     {
         var f = FileAccess.GetFileAsString("res://data/item.json");
 
-        Dictionary j = (Dictionary) Json.ParseString(f);
+        Dictionary j = (Dictionary)Json.ParseString(f);
 
-        Array items = (Array) j["items"];
+        Array items = (Array)j["items"];
 
         InventoryItem[] inventoryItems = new InventoryItem[items.Count];
 
         for (int i = 0; i < items.Count; i++)
         {
-            Dictionary item = (Dictionary) items[i];
+            Dictionary item = (Dictionary)items[i];
 
-            InventoryItem _item = new InventoryItem((string) item["name"], (string) item["desc"], 0);
+            InventoryItem _item = new InventoryItem((string)item["name"], (string)item["desc"], 0);
         }
 
-        return inventoryItems; 
+        return inventoryItems;
     }
 }

@@ -33,6 +33,6 @@ public struct TerrainTile
         newTerrainTile.unitID = oldTerrainTile.unitID;
     }
 
-    public static TerrainTile[,] CreateMapOfSize(byte sizeX, byte sizeY){return new TerrainTile[sizeX, sizeY];}
+    public static TerrainTile[,] CreateMapOfSize(byte sizeX, byte sizeY) { return new TerrainTile[sizeX, sizeY]; }
 
 }

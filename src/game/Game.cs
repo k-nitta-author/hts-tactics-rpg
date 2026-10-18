@@ -20,7 +20,7 @@ public partial class Game : Node2D
 
         startScreen = GD.Load<PackedScene>("uid://dobs7g5vxgsbu").Instantiate<StartScreen>();
         AddChild(startScreen);
-        startScreen.CallDeferred("Setup", this);   
+        startScreen.CallDeferred("Setup", this);
     }
 
 

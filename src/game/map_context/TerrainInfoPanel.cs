@@ -16,13 +16,12 @@ public partial class TerrainInfoPanel : Panel
         clabel = GetNodeOrNull<Label>("Label3");
     }
 
-	public void updateText(Unit unit, byte unitID)
-	{
+    public void updateText(Unit unit, byte unitID)
+    {
         label.Text = unitID.ToString();
         nlabel.Text = unit.name;
-        clabel.Text = Game.class_names[(byte)unit.char_class];
-
-	}
+        clabel.Text = Unit.getClassNameByIdx((byte)unit.char_class);
+    }
 
 
 

@@ -3,6 +3,6 @@ using System;
 
 public partial class WalkaroundNpc : CharacterBody2D
 {
-	public void TalkToPlayer(string dialog){}
-	
+    public void TalkToPlayer(string dialog) { }
+
 }
